@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Moviephone</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Moviephone</h1>
+    </div>
+  </div> 
+  <div class="container">
+    <form id="formOne">
+      <div>
+        <select class="form-select" id="movie-select" aria-label="Default select example">
+          <option selected>Movie:</option>
+          <option value="-1">Ghostbusters (PG-13)</option>
+          <option value="0">House of Gucci (R)</option>
+          <option value="3">Encanto (PG)</option>
+        </select>
+      </div>
+      <div>
+        <select class="form-select" id="time-select" aria-label="Default select example">
+          <option selected>Time:</option>
+          <option value="-5">Early bird</option>
+          <option value="0">Prime Time</option>
+          <option value="-2">Late Nite</option>
+        </select>
+      </div>
+      <div>
+        <select class="form-select" id="age-select" aria-label="Default select example">
+          <option selected>How old are you?</option>
+          <option value="-1">I'm a child</option>
+          <option value="0">I'm an adult</option>
+          <option value="-3">I'm old enough to get a discount</option>
+        </select>
+      </div>
+      <div id="submit-button">
+        <button type="submit" class="btn btn-primary">Show me the story!</button>
+      </div>
+    </form>
+    <div class="ticket">
+      <p>
+        Your ticket price is: <span class="printout"></span>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
